@@ -14,7 +14,9 @@ const btnStyle: React.CSSProperties = {
     width: "100px",
     fontFamily: "Mada, sans-serif",
     fontSize: "30px",
-    backgroundColor: "#F5F3BB"
+    backgroundColor: "#B4A0E5",
+    color: "#2D3047",
+    fontWeight: "bold"
 }
 
 const resultStyle: React.CSSProperties = {
@@ -22,7 +24,9 @@ const resultStyle: React.CSSProperties = {
     width: "400px",
     fontFamily: "Mada, sans-serif",
     fontSize: "30px",
-    border: "2px solid black"
+    border: "2px solid black",
+    backgroundColor:"white",
+    fontWeight: "bold"
 }
 
 const historyStyle: React.CSSProperties = {
@@ -31,7 +35,7 @@ const historyStyle: React.CSSProperties = {
     border: "1px solid black",
     textAlign: "center",
     fontFamily: "Mada, sans-serif",
-    backgroundColor: "#F5F3BB"
+    backgroundColor: "#B4A0E5"
 }
 
 
@@ -56,7 +60,7 @@ export function Calculator() {
         }
     }
 
-    return <div style={{backgroundColor:"#86BA90", height: "100vh"}}>
+    return <div style={{ backgroundColor: "#2D3047", height: "100vh" }}>
         <div style={mainDiv}>
             <div>
                 <input type="text" id="result" disabled style={resultStyle} placeholder={display} />
@@ -88,9 +92,9 @@ export function Calculator() {
                 </table>
                 <br />
                 <div style={historyStyle}>
-                    <h1>History</h1>
+                    <h1 style={{ color: "#2D3047" }}>History</h1>
                     <ul style={{ listStyle: "none" }}>
-                        {history.map(h => <li style={{ fontSize: "30px" }}>{h}</li>)}
+                        {history.map(h => <li style={{ fontSize: "30px", color: "#2D3047" }}>{h}</li>)}
                     </ul>
                 </div>
             </div>
