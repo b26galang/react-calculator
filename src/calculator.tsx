@@ -54,7 +54,7 @@ export function Calculator() {
             setDisplay(stateClone);
             const historyClone = [...history];
             setHistory(historyClone);
-            historyClone.push(display + value + result);
+            historyClone.push(display + " " + value + " " + result);
         } else {
             setDisplay(display + value);
         }
